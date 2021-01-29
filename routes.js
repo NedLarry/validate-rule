@@ -16,7 +16,7 @@ routes.get('/', (req, res) => {
 
 
 routes.post('/validate-rule', (req, res) => {
-
+    req.method = 'POST'
     try {
         
         const RULE_REQUIRED = ['field', 'condition', 'condition_value']
